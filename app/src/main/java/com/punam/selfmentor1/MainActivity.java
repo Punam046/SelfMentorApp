@@ -2,8 +2,9 @@ package com.punam.selfmentor1;
 
 import android.app.AlertDialog;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        totalQuestionTextView.setText("Total questions : "+ totalQuestion);
+
         loadNewquestion();
     }
 
@@ -59,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }else {
             selectedAnswer = clickedButton.getText().toString();
-            clickedButton.getText().toString();
             clickedButton.setBackgroundColor(Color.BLACK);
         }
     }
@@ -95,3 +95,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         loadNewquestion();
     }
 }
+
